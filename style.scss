@@ -1,0 +1,102 @@
+*{
+    font-family:  "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: hsl(212, 33%, 89%);
+    margin-top: 100px;
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:20px ;
+        & h1{
+            color: rgb(4, 14, 39);
+            letter-spacing:2;
+            margin-bottom: 0px;
+            padding-bottom:6px;
+        }
+        & .underline{
+            height: 5px;
+            width: 100px;
+            background-color:#c59d5f;
+            margin-top:0px;
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+        & button{
+            border-color:#c59d5f;
+            color: #c59d5f;
+            border-radius: 7px;
+            font-size:1.1em ;
+            padding:4px 10px;
+            margin: 0px 5px;
+            transition:0.5s ;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #c59d5f;
+                color: white;
+                
+            }
+        }
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        & article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            & img{
+                height: 175px;
+                width: 225px;
+                border-radius: 10px;
+                border: 4px solid #c59d5f;  
+                margin: 20px 30px;     
+            }
+            .menu_info{
+                display:flex;
+                flex-direction: column;
+                margin: 20px 0px;
+                width: 300px;
+                letter-spacing: 1;
+
+                .heading{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom:1px dotted ;
+                    padding-bottom: 10px;
+                    h4:last-child{
+                        color: #c59d5f;
+                    }
+                }
+                p{
+                    padding-top: 20px;
+                    color: hsl(213, 48%, 22%);
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:610px) {
+    main{
+        justify-content: center;
+        .menu_item{
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                width: 350px;
+                height: 200px;
+                margin-bottom: 0px;
+            }
+        }
+    
+    }
+}
