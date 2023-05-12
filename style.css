@@ -81,6 +81,12 @@ body main article .menu_info p {
 }
 
 @media (max-width: 610px) {
+  header h1 {
+    text-align: center;
+  }
+  header button {
+    font-size: 1em;
+  }
   main {
     justify-content: center;
   }

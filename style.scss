@@ -85,6 +85,14 @@ body{
 }
 
 @media (max-width:610px) {
+    header{
+        h1{
+            text-align: center;
+        }
+        button{
+            font-size: 1em;
+        }
+    }
     main{
         justify-content: center;
         .menu_item{
